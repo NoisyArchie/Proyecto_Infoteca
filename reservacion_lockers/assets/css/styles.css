@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #fff;
+    --text-color: #221314;
+    --second-color: #5a7184;
+    --main-color: #6e54fa;
+    --big-font: 6rem; /* Puedes cambiarlo según necesites */
+    --h2-font: 3rem; 
+    --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
+    url(../images/infoteca.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+form {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px;
+    padding: 2vw; /* Padding responsivo */
+    max-width: 90%; /* Ancho máximo en porcentaje */
+    width: 500px;   
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+label {
+    font-size: 2vw; /* Tamaño de fuente responsivo */
+}
+
+button {
+    margin: 1vw; /* Añadir margen alrededor de los botones */
+    border-radius: 7px;
+    padding: .5vw 1.5vw; /* Padding responsivo */
+    font-size: 1vw; /* Tamaño de fuente responsivo */
+    margin-top: 10px;
+    color: #fff; /* Color de la fuente */
+    font-weight: 600;
+    background-color: #6e54fa; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #6e54fa, #221314);
+    color: #fff;
+
+}
+
+#result {
+    margin-top: 0px;
+    font-size: 2vw; /* Tamaño de fuente responsivo */
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        max-width: 95%; /* Mayor ajuste en pantallas pequeñas */
+        width: 50vw;
+    }
+
+    label {
+        font-size: 6vw; /* Aumentar tamaño de la fuente */
+    }
+
+    button {
+        padding: 1vw 1.5vw;
+        font-size: 4vw; /* Aumentar tamaño de la fuente */
+        padding: 1vw 2vw; /* Padding responsivo */
+    }
+
+    #result {
+        font-size: 4vw; /* Aumentar tamaño de la fuente */
+    }
+}
