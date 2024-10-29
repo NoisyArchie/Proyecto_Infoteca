@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservación de Lockers</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 <body>
-    <h1>Reserva tu Locker</h1>
-    <form id="lockerForm">
-        <label>¿Necesitas un locker?</label>
-        <button type="button" id="yesButton">Sí</button>
-        <button type="button" id="noButton">No</button>
-    </form>
-    <div id="result"></div>
 
+    <div class="form-container">
+        <form id="lockerForm">
+            <label>¿Necesitas un locker?</label><br>
+            <button type="button" id="yesButton">Sí</button>
+            <button type="button" id="noButton">No</button>
+            <div id="result"></div>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
