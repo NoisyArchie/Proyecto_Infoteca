@@ -5,10 +5,9 @@ if ($conn->connect_error) {
     die(json_encode(['message' => 'Error al conectar a la base de datos.']));
 }
 
-// Revisa si necesita un locker
 $data = json_decode(file_get_contents('php://input'), true);
+
 if ($data['needLocker'] === 'si') {
-    // Encuentra el primer locker disponible
     $sql = "SELECT numero_locker FROM lockers WHERE ocupado = 0 ORDER BY numero_locker ASC LIMIT 1";
     $result = $conn->query($sql);
 
