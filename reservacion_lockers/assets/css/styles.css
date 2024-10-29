@@ -13,7 +13,7 @@
     --text-color: #221314;
     --second-color: #5a7184;
     --main-color: #6e54fa;
-    --big-font: 6rem; /* Puedes cambiarlo según necesites */
+    --big-font: 6rem;
     --h2-font: 3rem; 
     --p-font: 1.1rem;
 }
@@ -40,25 +40,25 @@ form {
 .form-container {
     background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 15px;
-    padding: 2vw; /* Padding responsivo */
-    max-width: 90%; /* Ancho máximo en porcentaje */
+    padding: 2vw;
+    max-width: 90%;
     width: 500px;   
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    backdrop-filter: blur(10px);
 }
 
 label {
-    font-size: 2vw; /* Tamaño de fuente responsivo */
+    font-size: 2vw;
 }
 
 button {
-    margin: 1vw; /* Añadir margen alrededor de los botones */
+    margin: 1vw;
     border-radius: 7px;
-    padding: .5vw 1.5vw; /* Padding responsivo */
-    font-size: 1vw; /* Tamaño de fuente responsivo */
+    padding: .5vw 1.5vw;
+    font-size: 1vw;
     margin-top: 10px;
-    color: #fff; /* Color de la fuente */
+    color: #fff;
     font-weight: 600;
     background-color: #6e54fa; 
     border: none; 
@@ -74,27 +74,27 @@ button:hover {
 
 #result {
     margin-top: 0px;
-    font-size: 2vw; /* Tamaño de fuente responsivo */
+    font-size: 2vw;
     color: green;
 }
 
 @media (max-width: 600px) {
     .form-container {
-        max-width: 95%; /* Mayor ajuste en pantallas pequeñas */
+        max-width: 95%;
         width: 50vw;
     }
 
     label {
-        font-size: 6vw; /* Aumentar tamaño de la fuente */
+        font-size: 6vw;
     }
 
     button {
         padding: 1vw 1.5vw;
-        font-size: 4vw; /* Aumentar tamaño de la fuente */
-        padding: 1vw 2vw; /* Padding responsivo */
+        font-size: 4vw;
+        padding: 1vw 2vw;
     }
 
     #result {
-        font-size: 4vw; /* Aumentar tamaño de la fuente */
+        font-size: 4vw; /
     }
 }
