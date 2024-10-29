@@ -1,7 +1,12 @@
-document.getElementById('lockerForm').addEventListener('submit', async function(event) {
-    event.preventDefault();
+document.getElementById('yesButton').addEventListener('click', async function() {
+    await handleReservation('si');
+});
 
-    const needLocker = document.getElementById('needLocker').value;
+document.getElementById('noButton').addEventListener('click', async function() {
+    await handleReservation('no');
+});
+
+async function handleReservation(needLocker) {
     if (needLocker === 'no') {
         document.getElementById('result').innerText = "No se necesita un locker.";
         return;
@@ -21,4 +26,4 @@ document.getElementById('lockerForm').addEventListener('submit', async function(
     } catch (error) {
         document.getElementById('result').innerText = "Error en la reserva.";
     }
-});
+}
